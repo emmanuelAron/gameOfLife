@@ -5,8 +5,8 @@ public class Cellule {
 		author Emmanuel ARON
 	
 	***/
-	boolean etat;//false = mort , true = vivant
-	int nbVoisins;
+	private boolean etat;//false = mort , true = vivant
+	private int nbVoisins;
 
 	public boolean isEtat() {
 		return etat;
@@ -23,6 +23,7 @@ public class Cellule {
 	
 	
 	public int getNbVoisins() {
+		System.out.println("toto");
 		return nbVoisins;
 	}
 
@@ -45,7 +46,6 @@ public class Cellule {
 	}
 	@Override
 	public String toString() {
-		// TODO Stub de la méthode généré automatiquement
 		return "etat: "+etat + " ; nombre de voisins: "+nbVoisins;
 	}
 }
